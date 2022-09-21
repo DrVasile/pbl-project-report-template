@@ -4,7 +4,7 @@ This is a starting guide on the LaTeX project containing a project report for gr
 
 ## Prerequisites
 * Knowledge of the basics of working with LaTeX,
-* The structure of the LaTeX project,
+* Understanding of the structure of a LaTeX project,
 * A LaTeX editing/runtime environment.
 
 
@@ -25,7 +25,6 @@ There are several options on setting up a LaTeX runtime environment.
     * **NOTE**: If you'll run into errors that you cannot solve reach out to the mentor responsible for the project template.     
 
 
-
-# Further reading
-* [Overleaf LaTeX Docs](https://www.overleaf.com/learn)
+## Further reading
 * [Overleaf](https://www.overleaf.com/project)
+* [Overleaf LaTeX Docs](https://www.overleaf.com/learn)
