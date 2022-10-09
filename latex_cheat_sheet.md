@@ -1,12 +1,9 @@
-# How to?
+# LaTeX Cheat-sheet
 
-..and some suggestions.
 
-### Add a list
+## If you want to:
 
-Useful when listing things.
-You can do unnumbered lists, numbered lists and lists in lists.
-Use the last ones sparingly.
+### ...add an unordered list:
 
 ```
 \begin{itemize}
@@ -14,42 +11,38 @@ Use the last ones sparingly.
 	\item Data collection;
 	\item Data processing.
 \end{itemize}
+```
 
+### ...add an ordered list:
+```
 \begin{enumerate}
 	\item Data requirements;
 	\item Data collection;
 	\item Data processing.
 \end{enumerate}
+```
 
-\begin{enumerate}
-	\item Data requirements;
-	\begin{itemize}
-    	\item Data;
-    	\item Data.
-    \end{itemize}
-	\item Data collection;
-	\item Data processing.
-\end{enumerate}
+Also, if needed, the lists can be nested.
+
+
+## Add a code listing
+
+The only way of listing code (seriously, no code print screens). You can even style the printed code by using specific parameters.
+
+```
+\begin{lstlisting}[label=lst:nparray, language=Python, caption=Problem Conditions in Python]
+# Cost array
+cost = np.array([
+	[4, 1, 3],
+	[2, 0, 5],
+	[3, 2, 2]
+])
+\end{lstlisting}
 
 ```
 
-### Add an image
 
-Useful for getting to that minimal amount of pages.
-Use parameters such as `width` and others to control figure dimensions.
-Refer to figure by using `\autoref{fig:utmlogo}`.
-
-```
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=14cm]{"Chapter1/Logo"}
-    \caption{UTM Logo \cite{ref:zoo}}
-    \label{fig:utmlogo}
-\end{figure}
-
-```
-
-### Add an equation
+## Add an equation
 
 Useful if math.
 Refer to figure by using `\autoref{eq:energymass}`.
@@ -59,14 +52,20 @@ Refer to figure by using `\autoref{eq:energymass}`.
     E = m \cdot c^2
     \label{eq:energymass}
 \end{equation}
-
 ```
 
-### Add a table
 
-In Latex, tables can be a bit hard to master.
-There are many ways to make a table.
-Just make sure it's easily readable (otherwise why are you using a table?) and consistent with other tables.
+## Add an image
+
+There is a custom command for showing figures declared in the .cls file. Use the following syntax to include your figures.
+```
+\showfigure{scale}{path_to_the_image}{caption_text}{figure_label}
+```
+
+
+## Add a table
+
+In Latex, tables can be a bit hard to master. There are many ways to make a table. Just make sure it's easily readable (otherwise why are you using a table?) and consistent with other tables. Also, sometimes it is convenient to use the online LaTeX table generator.
 
 ```
 \begin{table}[h]
@@ -86,24 +85,8 @@ Just make sure it's easily readable (otherwise why are you using a table?) and c
 
 ```
 
-### Add a code listing
 
-The only way of listing code (seriously, no code print screens).
-You can even color code if you specify the right programming language as a parameter.
-
-```
-\begin{lstlisting}[label=lst:nparray, language=Python, caption=Problem Conditions in Python]
-# Cost array
-cost = np.array([
-	[4, 1, 3],
-	[2, 0, 5],
-	[3, 2, 2]
-])
-\end{lstlisting}
-
-```
-
-### Attach a pdf file
+## Attach a pdf file
 
 Useful for attaching "Declaratii" and "Avizuri".
 Put them in the `PDF` folder.
@@ -115,7 +98,7 @@ Put them in the `PDF` folder.
 
 ```
 
-### Add a reference
+## Add a reference
 
 Useful when writing a thesis.
 Add an entry in the `Additional/References.tex` file.
@@ -130,7 +113,7 @@ Choose a style of referencing and stick to it.
 
 ```
 
-### Define a custom variable
+## Define a custom variable
 
 Useful if you are repeatedly using something.
 Some important stuff is already defined.
@@ -145,7 +128,7 @@ Check the abstract for example use.
 
 ```
 
-### Add bold, italics..
+## Add bold, italics..
 
 Use sparingly.
 

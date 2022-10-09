@@ -58,6 +58,8 @@
 
 \RequirePackage{mathptmx}
 
+\RequirePackage{multirow}
+
 \RequirePackage{mwe}
 
 \RequirePackage[fontsize=12pt]{scrextend}
@@ -151,15 +153,14 @@
 	\end{figure}
 }
 
+\newcommand{\studentname}[1]{#1}
+\newcommand{\studentgroup}[1]{#1}
+
 \newcommand{\student}[2]{
-    \newcommand{\studentname}{#1}
-    \newcommand{\studenttitle}{#2}
+    \studentname{#1}, \studentgroup{#2}
 }
 
-\newcommand{\supervisor}[2]{
-    \newcommand{\supername}{#1}
-    \newcommand{\supertitle}{#2}
-}
+\newcommand{\supervisor}[2]{#1, #2}
 
 \newcommand{\taskdate}[2]{
     \newcommand{\taskstart}{#1}

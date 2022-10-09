@@ -1,14 +1,9 @@
-\ministry{Ministerul Educației, Culturii și Cercetării al Republicii Moldova}
-\university{Universitatea Tehnică a Moldovei}
-\faculty{Facultatea Calculatoare, Informatică și Microelectronică}
-\department{Departamentul Ingineria Software și Automatică}
+\ministry{Ministry of Education, Culture and Research of Republic of Moldova}
+\university{Technical University of Moldova}
+\faculty{Faculty of Computers, Informatics and Microelectronics}
+\department{Department of Software Engineering and Automatics}
 
-\author{Name01 Name02}{FAF-XYZ}
-\supervisor{Name11 Name12}{Title0}
-\consultantone{Name11 Name12}{Title1}
-\consultanttwo{Name21 Name22}{Title2}
-
-\title{The title of the paper}{Titlul lucrarii}
+\title{LaTeX: A document preparation system.}{LaTeX: Un sistem de întocmire a documentelor.}
 
 \year{2022}
 
@@ -16,33 +11,28 @@
 \begin{titlepage}
 
     \textsc{\ministryname} \\
-    \universityname \\
-    \facultyname \\
-    \departmentname \\
+    \textsc{\universityname} \\
+    \textsc{\facultyname} \\
+    \textsc{\departmentname} \\
 	
 	\vfill
 	
 	{\LARGE \titleen \par}
-	{\Large Project report \par}
+	{\LARGE Project report \par}
 	
 	\vfill
-	
-	\hfill
-    \begin{minipage}{0.25\textwidth}
-        \raggedright
-        {Student: \par}
-        {Coordinator: \par}
-        {Consultant: \par}
-        {Consultant: \par}
-    \end{minipage}
-    ~
-    \begin{minipage}{0.45\textwidth}
-        \raggedleft
-        {\authorname, \authorgroup \par}
-        {\supername, \supertitle \par}
-        {\consultantonename, \consultantonetitle \par}
-        {\consultanttwoname, \consultanttwotitle \par}
-    \end{minipage}
+    	
+    \begin{table}[h!]
+        \hfill
+        \begin{tabular}{lr}
+        \textbf{Mentor:}   & \supervisor{prof.}{John Doe} \\
+        \textbf{Students:} & \student{Satoshi Nakamoto}{FAF-002}  \\
+                           & \student{Erich Gamma}{FAF-003}       \\
+                           & \student{John Vlissides}{FAF-004}    \\
+                           & \student{Ralph Johnson}{FAF-005}     \\
+                           & \student{Richard Helm}{FAF-006}
+        \end{tabular}
+    \end{table}
 	
 	\vfill
 
